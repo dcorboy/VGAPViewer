@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>VGAPViewer &mdash; VGA Planets Viewer</title>
+
+<script src="scene.json"></script>
+<script src="renderScene.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+	<canvas id="universe" width="4000" height="4000">
+		<p>Your browser doesn't support canvas.</p>
+	</canvas>
+	<div id="overlay">
+		<div id="ocgame" class="container">
+			<div class="label">Game:</div>
+			<div id="ogame"></div>
+		</div>
+		<div id="ocplayer" class="container">
+			<div class="label">Player:</div>
+			<div id="oplayer"></div>
+		</div>
+		<div id="octurn" class="container">
+			<div class="label">Turn:</div>
+			<div id="oturn"></div>
+		</div>
+		<div id="occontrols" class="container">
+			<div id="orewind" class="ctlbutton" onclick="resetAnimation()">Rewind</div>
+			<div id="oplaypause" class="ctlbutton" onclick="playPauseAnimation()">Play</div>
+			<div id="ostep" class="ctlbutton" onclick="stepAnimation()">Step</div>
+		</div>
+	</div>
+	<script>render();</script>
+</body>
+
+</html> 

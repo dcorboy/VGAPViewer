@@ -1,0 +1,39 @@
+/*	style.css
+/*	VGAPViewer style sheet
+/*	Copyright 2013 Dave Coboy
+/*
+/*	This file is part of VGAPViewer, licensed under the GNU General Public License */
+
+canvas#universe {
+	background-color: black;
+}
+
+div#overlay {
+	color: white;
+	font-size: 16px;
+	text-shadow: 1px 1px 1px #000;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 10px;
+}
+
+div.label {
+	float: left;
+	margin-right: 10px;
+}
+
+div.ctlbutton {
+	float: left;
+	text-align: center;
+	padding: 5px;
+	margin-right: 5px;
+	border: 1px solid white;
+	width: 50px;
+	cursor: pointer;
+}
+
+div#ocgame { font-size: 24px; }
+div#occontrols { margin-top: 10px; }
+
