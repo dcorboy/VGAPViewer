@@ -4,9 +4,15 @@ VGAPViewer uses the [Planets Nu](http://planets.nu/) API to build a turn-by-turn
 
 You will need Ruby and Bash to build the scene file which renders on an HTML 5 Canvas in any modern browser.
 
-![assault](http://www.corboy.com/vgapviewer/images/assault.png "Assault")
-![expansion](http://www.corboy.com/vgapviewer/images/expansion.png "Expansion")
-![breach](http://www.corboy.com/vgapviewer/images/breach.png "Breach")
+<a target="_blank" href="http://www.corboy.com/vgapviewer/images/assault.png">
+	<img style="max-width: 100%; width: 350px; margin: 5px;" title="Assault" alt="Assault" src="http://www.corboy.com/vgapviewer/images/assault.png">
+</a>
+<a target="_blank" href="http://www.corboy.com/vgapviewer/images/expansion.png">
+	<img style="max-width: 100%; width: 350px; margin: 5px;" title="Expansion" alt="Expansion" src="http://www.corboy.com/vgapviewer/images/expansion.png">
+</a>
+<a target="_blank" href="http://www.corboy.com/vgapviewer/images/breach.png">
+	<img style="max-width: 100%; width: 350px; margin: 5px;" title="Breach" alt="breach" src="http://www.corboy.com/vgapviewer/images/breach.png">
+</a>
 
 # Examples
 
