@@ -8,9 +8,14 @@ You will need Ruby and Bash to build the scene file which renders on an HTML 5 C
 
 # Examples
 
-I should put some examples up at corboy.com
+Here are some sample animations from a recent game with my colleagues:
 
-## Animations
+* [Player 11](http://www.corboy.com/vgapviewer/player11/vgapviewer.html)
+* [Player 1](http://www.corboy.com/vgapviewer/player1/vgapviewer.html)
+* [Player 5](http://www.corboy.com/vgapviewer/player5/vgapviewer.html)
+* [Player 6](http://www.corboy.com/vgapviewer/player6/vgapviewer.html)
+
+## Animations Supported
 
 * Ship Moves (Friendly)
 * Ship Builds
@@ -25,19 +30,19 @@ Rendering a Planets Nu game is done in three parts:
 
 1. Retrieivng the Turn Data Files
 2. Processing the Turn Data Files
-	into a composite scene file
+    into a composite scene file
 3. Viewing the Resulting Scene
 
 ### Retrieving the Turn Data Files
 
 The Planets Nu API is documented [here](http://vgaplanets.org/index.php/Planets.Nu_API) and [here](http://planets.nu/api-documentation).
 
-It describes that you can retrieve the turn data for a completed game with `http://api.planets.nu/game/loadturn?gameid=GAMEID&playerid=PLAYERID&turn=TURNNUMBER`
+The documentation describes that you can retrieve the turn data for a completed game with: `http://api.planets.nu/game/loadturn?gameid=GAMEID&playerid=PLAYERID&turn=TURNNUMBER`
 
 Since processing happens locally, you should use a bash script to retrieve all the turn files you will need via `curl`.
 
 ``` bash
-for i in {1..69}
+for i in {2..69}
 do
 	curl --compressed -d gameid=52834 -d playerid=11 -d turn=$i http://api.planets.nu/game/loadturn > ./player11/VGAP-T$i.json
 done
@@ -69,6 +74,7 @@ Only standard window scrolling and browser zoom controls are available at presen
 
 * The system only works with the large 4k x 4k maps. I have never played one of the smaller games. Send me the game number for a game with a smaller map and I will build in the support.
 * Make sure that the player was active during the first processed turn as the background planet map is taken from the first turn of the scene.
+* HYP movement is not properly animated
 * The current enemy ship explosion animation (shrinking white ring) sucks.
 
 ## To Do
@@ -77,8 +83,8 @@ Only standard window scrolling and browser zoom controls are available at presen
 * Come up with a better enemy ship explosion animation
 * Support arbitrary map sizes
 * Better frame-by-frame controls, looping control
-* zoom controls
-* merge multiple player scenes to create composite full-game animation?
+* Zoom controls
+* Merge multiple player scenes to create composite full-game animation?
 
 ## License
 
