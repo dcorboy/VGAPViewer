@@ -4,7 +4,9 @@ VGAPViewer uses the [Planets Nu](http://planets.nu/) API to build a turn-by-turn
 
 You will need Ruby and Bash to build the scene file which renders on an HTML 5 Canvas in any modern browser.
 
-> { Put some cool images here }
+![assault](http://www.corboy.com/vgapviewer/images/assault.png "Assault")
+![expansion](http://www.corboy.com/vgapviewer/images/expansion.png "Expansion")
+![breach](http://www.corboy.com/vgapviewer/images/breach.png "Breach")
 
 # Examples
 
@@ -80,6 +82,7 @@ Only standard window scrolling and browser zoom controls are available at presen
 ## To Do
 
 * Convert serialized JSON variable to JSONP
+* I think the minefields should be shown a turn earlier than they are
 * Come up with a better enemy ship explosion animation
 * Support arbitrary map sizes
 * Better frame-by-frame controls, looping control
