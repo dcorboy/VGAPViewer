@@ -1,9 +1,11 @@
 //	renderScene.js
 //	JavaScript functionality for the animated rendering of the VGAPViewer scene file.
 //
-//	Copyright 2013 Dave Corboy
+//	Copyright 2013 Dave Corboy <dave@corboy.com>
 //
 //	This file is part of VGAPViewer.
+//	VGAPViewer uses the Planets Nu API (http://planets.nu/) to build a turn-by-turn
+//	animation of any VGA Planets game.
 //
 //	VGAPViewer is free software: you can redistribute it and/or modify
 //	it under the terms of the GNU General Public License as published by
